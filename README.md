@@ -1,1 +1,1 @@
-Supporting demo app for medium article: TODO
+Supporting demo expo app for medium article: TODO
