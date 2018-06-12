@@ -8,12 +8,11 @@ import BasicConditionalExampleApp from "./example-apps/basic-conditional/Example
 import AccessControlBasicExampleApp from "./example-apps/v1-access-control-basic/ExampleApp";
 import AccessControlReduxExampleApp from "./example-apps/v2-access-control-redux/ExampleApp";
 import AccessControlLogicExampleApp from "./example-apps/v3-access-control-logic/ExampleApp";
-import AccessControlWrappedExampleApp from "./example-apps/v4-access-control-wrapped/ExampleApp";
 
 import { Card } from "react-native-elements";
 
 const Splash = ({ navigation }) => (
-  <ScrollView style={{ flex: 1 }}>
+  <ScrollView style={styles.scrollView}>
     <Text style={styles.paragraph}>
       Below are various examples referenced in
       https://medium.com/@duhseekoh/TODO
@@ -36,7 +35,6 @@ const Splash = ({ navigation }) => (
         onPress={() => navigation.navigate("AccessControlLogicExampleApp")}
       />
     </Card>
-    <Card title="Wrapped Access Control" />
   </ScrollView>
 );
 
@@ -50,19 +48,19 @@ const Routes = createStackNavigator({
   AccessControlBasicExampleApp: {
     screen: AccessControlBasicExampleApp,
     navigationOptions: {
-      title: 'Basic Access Control',
+      title: 'Nuclear Plant: Basic Access Control',
     }
   },
   AccessControlReduxExampleApp: {
     screen: AccessControlReduxExampleApp,
     navigationOptions: {
-      title: 'Redux Access Control',
+      title: 'Nuclear Plant: Redux Access Control',
     }
   },
   AccessControlLogicExampleApp: {
     screen: AccessControlLogicExampleApp,
     navigationOptions: {
-      title: 'Custom Logic Access Control',
+      title: 'Nuclear Plant: Custom Logic Access Control',
     }
   }
 });
